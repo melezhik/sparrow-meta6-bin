@@ -13,4 +13,7 @@ fi
 cd $path
 set -x
 meta6 --new-module=$name $options
+#mod_path=$(perl -e "print join '/', split '::', qq{$name}")
+#mkdir -p lib/$mod_path
+#ls -l
 set +x
